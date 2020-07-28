@@ -1,6 +1,6 @@
 /* Break em Switch, causava um desvio de fluxo que consiste em sair de um ponto, pular algumas linhas e alcançar outro.
  * Por exemplo, se ele satisfaz uma opção imposta em um case, ele irá executar o bloco de código que está aqui dentro
- * e em seguida, pular os demais para acessá-lo e concluir a estrutura, após o switch.
+ * e em seguida, pular os demais e concluir a estrutura, após o switch.
  * Um break não influencia uma estrutura IF, mas influencia: SWITCH, FOR, WHILE. 
  * Continue funciona dentro de: FOR e WHILE.
  * O ideal é evitar o uso de ambos embora, existam momentos que ele realmente se faz necessário.
