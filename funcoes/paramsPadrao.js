@@ -12,7 +12,7 @@ console.log(Soma(2, 2, 2)) //6
 console.log(Soma(3)) //5, pois somente o params a recebeu o valor.
 console.log(Soma(0, 0, 0)) //PONTO RUIM DA SOLUCAO: 3. Pois, 0 é considerado falso e com isso, não irá assumir o padrão
 
-//Estratégias 2, 3 e 4 para gerar valor padrão
+//Estratégias 2, 3 e 4 para gerar valor padrão. PODEM AINDA GERAR BUGS.
 function Soma01(a, b, c) {
     a = a != undefined ? a : 1
         /* Se o valor de a for diferente de indefinido, ele receberá o valor próprio do a
@@ -26,4 +26,17 @@ function Soma01(a, b, c) {
     c = isNaN(c) ? 1 : c
         /*Estratégia 4: O mais adequado quando estamos realizando operações matemáticas pois, o que esperamos é que sejam números
          * Se é (Não é um Número/NaN), o valor será 1. Se não, o valor será o atribuído para c.*/
+    return a + b + c
 }
+console.log('Soma 01=', Soma01()) //3, pois assumiu os valores para as condições quando falsas.
+console.log('Soma 01=', Soma01(2)) //4, pois somente a assumiu o 2, os demais permaneceram com o falso.
+console.log('Soma 01=', Soma01(2, 2, 2)) //6, todos assumiram o valor.
+console.log('Soma 01=', Soma01(0, 0, 0)) //0, todos assumiram o valor.
+
+/* Params Padrão conforme o ES2015. Não precisaria testar nas variáveis, 
+ * defininando o valor padrão na própria área de params. Isso economiza linhas de código.
+ * Caso algum navegador não suporte essa versão, há as demais em cima.*/
+function Soma02(a = 1, b = 1, c = 1) {
+    return a + b + c
+}
+console.log('Soma 02=', Soma02(), Soma02(2), Soma02(2, 2, 2), Soma02(0, 0, 0)) //3, 4, 6, 0
