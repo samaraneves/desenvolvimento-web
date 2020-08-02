@@ -1,6 +1,7 @@
 /* Serão mostradas as versões antes do ECMA 2015 e após, de como lidar com parâmetros padrões.*/
 
-// Estratégia 1: O uso do operador OR (||) para ter o efeito de um valor padrão --- como mostrado no arquivo fundamentos/boolean
+// Estratégia 1: O uso do operador OR (||) para ter o efeito de um valor padrão --- como mostrado 
+//no arquivo fundamentos/boolean
 function Soma(a, b, c) {
     a = a || 1 //Se o primeiro valor for falso, receberá o número 1.
     b = b || 1
