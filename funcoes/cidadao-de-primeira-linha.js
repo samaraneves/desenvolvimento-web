@@ -6,7 +6,7 @@
 /*Função criada de forma literal*/
 function Exemplo00() {}
 
-/*Armazenar em uma variável*/
+/*Armazenar em uma variável de função/valor de função*/
 const Exemplo01 = function() {} //Função anônima
 
 /*Armazenar em um array

@@ -16,7 +16,7 @@ let ola = () => 'Olá!' //ou let ola = _ => console.log('Olá!'), esse modo tem 
     //Uma função que não possuí parâmetros, devemos usar o () se não, a sintaxe sai errada.
 console.log(ola())
 
-/* O this dentro de uma funçã arrow, pode ser considerado como fixo, baseado no contexto do qual a função foi escrita.
+/* O this dentro de uma função arrow, pode ser considerado como fixo, baseado no contexto do qual a função foi escrita.
  */
 
 /* function Pessoa() {
