@@ -8,4 +8,6 @@
 (function() {
     console.log('Será exacutado na hora que a função for declarada.')
     console.log('Fugindo do escopo abrangente.')
-})()
+})
+
+()
