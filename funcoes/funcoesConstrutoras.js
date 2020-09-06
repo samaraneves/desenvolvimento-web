@@ -1,5 +1,5 @@
 function Carro(velocidadeMaxima = 200, delta = 5) {
-    //atributo privado que é a variável criado ao próprio escopo da função
+    //atributo privado que é a variável criada ao próprio escopo da função
     let velocidadeAtual = 0;
     //método público
     this.acelerar = function() {
