@@ -4,7 +4,8 @@
  */
 const notas = [8.5, 7.4, 3.2, 2.0]
 
-/*For In, não trará as notas em si, mas sim, os índices - posições - onde os valores estão alocados. */
+/* For In, não trará as notas em si, mas sim, os índices - posições - 
+ * onde os valores estão alocados. */
 
 for (let index in notas) {
     console.log(index, notas[index]) //Para acessar a nota, foi necessário inserir via array. NOMEARRAY INDICE]
