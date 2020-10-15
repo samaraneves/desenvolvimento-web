@@ -11,7 +11,23 @@ function numeroExtenso(numero) {
             return 'três'
         case 4:
             return 'quatro'
+        case 5:
+            return 'cinco'
+        case 6:
+            return 'seis'
+        case 7:
+            return 'sete'
+        case 8:
+            return 'oito'
+        case 9:
+            return 'nove'
+        case 10:
+            return 'dez'
         default:
-            break;
+            return 'Número não existente no intervalo'
     }
 }
+console.log(numeroExtenso(1))
+console.log(numeroExtenso(11))
+console.log(numeroExtenso(10))
+console.log(numeroExtenso(9))
