@@ -10,7 +10,7 @@ console.log(filho.att1) // A. O resultado é retornado pois, __proto__ realizou 
 console.log(filho.att0) // Z. Encontra pois, __proto__ realiza as pesquisas.
     // O avô não teve seu __proto__ alterado diferente de filho e pai, seu prototipo então é apontado como o
     // maior da hierarquia sendo Object.prototype
-console.log(filho.att3) // C. Apesar de o pai possuir o mesmo atributo, a busca parouno filho pois, ele próprio possuía
+console.log(filho.att3) // C. Apesar de o pai possuir o mesmo atributo, a busca parou no filho pois, ele próprio possuía
 
 const carro = {
     velAtual = 0,

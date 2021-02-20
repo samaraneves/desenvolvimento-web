@@ -12,3 +12,17 @@ console.log(meuObj.prototype === obj1.__proto__) //true
  * Usando a instância para comparar com a função construtora ambas terão o mesmo protótipo?
  * R: Sim. Ele fará um link entre a instância do objeto e seu protótipo (porque __proto__ é derivado de prototype)
  */
+
+meuObj.prototype.nome = 'Anônimo'
+meuObj.prototype.falar = function() {
+    return console.log(`Meu nome é ${this.nome}`)
+}
+obj1.falar()
+obj2.nome = 'Rafael'
+obj2.falar()
+
+// Atribuindo o prototype manualmente
+const obj3 = {}
+obj3.__proto__ = meuObj.prototype //Recerá todos os atributos e a função
+obj3.nome = 'Obj3'
+obj3.falar()

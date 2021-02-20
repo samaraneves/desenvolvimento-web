@@ -15,7 +15,7 @@ const volvo = {
     velMax: 200
 }
 
-console.log(ferrari.__proto__) //Acessar o prótipo dele, o Objeto pai dele
+console.log(ferrari.__proto__) //Acessar o protótipo dele, o Objeto pai
     // Ele procurará na cadeia de Protótipos, se achar em um retornará ele se não, retornará undefined
     // O protótipo de Ferrari é um objeto vazio por hora
 console.log(ferrari.__proto__ === Object.prototype) //true

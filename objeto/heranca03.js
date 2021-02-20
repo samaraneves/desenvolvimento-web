@@ -1,6 +1,3 @@
-/*
- */
-
 const pai = {
     nome: 'Pedro',
     cabelo: 'Preto'
